@@ -1,3 +1,27 @@
+# react-client-typescript
+
+Starter for React front end:
+- [x] Should use React
+- [x] Should use Typescript
+- [ ] Should use Bootstrap
+- [ ] Should call authentification back end
+- [ ] Should contain grid component
+- [ ] Should have tests
+
+## Prerequisites
+
+- Install Node.js with global typescript
+- Install Facebook's browser extension "React developer tools".
+
+## How to run
+
+```npm install```
+```npm start``` (For debugging, place breakpoint then run the task from VSCode after running npm start in terminal)
+```npm test```
+```npm run build```
+
+## Original readme below
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
