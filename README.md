@@ -3,7 +3,7 @@
 Starter for React front end:
 - [x] Should use React
 - [x] Should use Typescript
-- [ ] Should use Bootstrap
+- [x] Should use Bootstrap
 - [ ] Should call authentification back end
 - [ ] Should contain grid component
 - [ ] Should have tests
