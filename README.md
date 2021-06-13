@@ -20,6 +20,15 @@ Starter for React front end:
 ```npm test```
 ```npm run build```
 
+## Todo
+- Bug: Refresh required after login
+
+## Resources
+
+- Compile time and runtime type-checking of props: https://blog.logrocket.com/comparing-typescript-and-proptypes-in-react-applications/#:~:text=Using%20TypeScript%20with%20React%20allows%20you%20to%20add,need%20to%20provide%20the%20necessary%20dependencies%20and%20configurations.
+
+- Login workflow: https://www.digitalocean.com/community/tutorials/how-to-add-login-authentication-to-react-applications#:~:text=You%20can%20use%20authentication%20to%20manage%20which%20users,the%20login%20information%20once%20they%20have%20successfully%20authenticated.
+
 ## Original readme below
 
 # Getting Started with Create React App
