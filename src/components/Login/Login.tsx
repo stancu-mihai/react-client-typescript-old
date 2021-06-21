@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import './Login.css';
 import PropTypes, { InferProps } from "prop-types";
 
 type LoginCredentials = {
@@ -40,20 +39,24 @@ const Login = ({ setToken }: LoginTypes) => {
 
     return(
         <div className="login-wrapper">
-            <h1>Please Log In</h1>
-            <form onSubmit={handleSubmit}>
-            <label>
-                <p>Username</p>
-                <input type="text" onChange={e => setUserName(e.target.value)}/>
-            </label>
-            <label>
-                <p>Password</p>
-                <input type="password" onChange={e => setPassword(e.target.value)}/>
-            </label>
-            <div>
-                <button type="submit">Submit</button>
+            <div className="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+                <form onSubmit={handleSubmit}>
+                    <h1>Please Log In</h1>
+                    <div className="form-outline mb-4">
+                        <label className="form-label" htmlFor="username">Username</label>
+                        <input name="username" className="form-control form-control-lg" type="text" placeholder="Enter username"  onChange={e => setUserName(e.target.value)}/>
+                    </div>
+                    <div className="form-outline mb-3">
+                        <label className="form-label" htmlFor="password">Password</label>
+                        <input name="password" className="form-control form-control-lg" type="password" placeholder="Enter password"  onChange={e => setPassword(e.target.value)}/>
+                    </div>
+                    <div className="text-center text-lg-start mt-4 pt-2">
+                        <button type="submit" className="btn btn-primary btn-lg">Submit</button>
+                        <p className="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a href="#!"
+                            className="link-danger">Register</a></p>
+                    </div>
+                </form>
             </div>
-            </form>
         </div>
     )
 }
