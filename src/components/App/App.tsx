@@ -1,19 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import PrivateRoute from '../PrivateRoute/PrivateRoute';
 import Login from '../Login/Login';
-
-function setToken(userToken: string) {
-  sessionStorage.setItem('token', userToken);
-}
-
-function getToken() {
-  return sessionStorage.getItem('token');
-}
+import useToken from './useToken';
 
 function App() {
-    const token = getToken();
+  const { token, setToken } = useToken();
 
     if(!token) {
         return <Login setToken={setToken} />

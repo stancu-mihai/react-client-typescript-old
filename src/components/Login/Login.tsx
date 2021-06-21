@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import PropTypes, { InferProps } from "prop-types";
 
 type LoginCredentials = {

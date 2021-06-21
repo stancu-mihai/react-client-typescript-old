@@ -21,7 +21,7 @@ Starter for React front end:
 ```npm run build```
 
 ## Todo
-- Bug: Refresh required after login
+
 
 ## Resources
 
