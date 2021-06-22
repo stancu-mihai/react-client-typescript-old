@@ -19,12 +19,12 @@ async function loginUser(credentials: LoginCredentials) {
 }
 
 const LoginPropTypes = {
-    setToken: PropTypes.func.isRequired
+    setUser: PropTypes.func.isRequired
 };
 
 type LoginTypes = InferProps<typeof LoginPropTypes>; // compile time prop type-checking
 
-const Login = ({ setToken }: LoginTypes) => {
+const Login = ({ setUser }: LoginTypes) => {
     const [username, setUserName] = React.useState<string>();
     const [password, setPassword] = React.useState<string>();
 
@@ -34,7 +34,7 @@ const Login = ({ setToken }: LoginTypes) => {
           username: username? username : '',
           password: password? password : ''
         });
-        setToken(user.token);
+        setUser(user);
       }
 
     return(

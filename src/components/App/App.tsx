@@ -3,13 +3,13 @@ import './App.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import PrivateRoute from '../PrivateRoute/PrivateRoute';
 import Login from '../Login/Login';
-import useToken from './useToken';
+import useUserInfo from './useUserInfo';
 
 function App() {
-  const { token, setToken } = useToken();
+  const { user, setUser } = useUserInfo();
 
-    if(!token) {
-        return <Login setToken={setToken} />
+    if(!user) {
+        return <Login setUser={setUser} />
     }
 
     return (
