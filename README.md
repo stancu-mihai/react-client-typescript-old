@@ -5,6 +5,7 @@ Starter for React front end:
 - [x] Should use Typescript
 - [x] Should use Bootstrap
 - [x] Should call authentification back end
+- [x] Should validate form fields
 - [ ] Should contain grid component
 - [ ] Should have tests
 
