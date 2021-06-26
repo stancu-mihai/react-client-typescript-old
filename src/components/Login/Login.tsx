@@ -90,7 +90,7 @@ const Login = ({ setUser }: LoginTypes) => {
                             </button>
                             <p className="small fw-bold mt-2 pt-1 mb-0">
                                 Don't have an account?
-                            <a href="/register" className="link-danger">Register</a></p>
+                            <a href="/register" className="link-danger">Sign up</a></p>
                         </div>
                     </Form>
                     )}
