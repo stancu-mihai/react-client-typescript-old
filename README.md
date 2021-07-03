@@ -32,6 +32,8 @@ Starter for React front end:
 
 - https://bezkoder.com/react-hooks-jwt-auth/
 
+- Used styling from https://startbootstrap.com/previews/resume for the Landing page
+
 ## Original readme below
 
 # Getting Started with Create React App
