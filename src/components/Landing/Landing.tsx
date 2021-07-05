@@ -114,6 +114,7 @@ function Landing() {
                                 <li>
                                     <a href="https://github.com/stancu-mihai/serverless-dotnet-api">https://github.com/stancu-mihai/serverless-dotnet-api</a>
                                     <ul>
+                                        <li>Check it out <a href ="/home">here</a> (served on AWS Lambda)</li> 
                                         <li>.NET REST API</li> 
                                         <li>Uses DynamoDB and The serverless framework</li> 
                                         <li>Generates Swagger documentation automatically</li> 
