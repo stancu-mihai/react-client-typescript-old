@@ -6,7 +6,7 @@ const logout = () => {
   };
 
 function Menu() {
-  const { user, setUser } = useUserInfo();
+  const { user } = useUserInfo();
   return (
     <nav className="navbar navbar-expand navbar-light bg-light">
       <Link to={"/"} className="navbar-brand">

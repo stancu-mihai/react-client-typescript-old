@@ -13,7 +13,7 @@ import Menu from '../Menu/Menu';
 const history = createBrowserHistory();
 
 function App() {
-  const { user, setUser } = useUserInfo();
+  const { setUser } = useUserInfo();
 
   return (
     <Router history={history}>
