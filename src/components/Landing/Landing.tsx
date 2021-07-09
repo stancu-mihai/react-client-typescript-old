@@ -107,32 +107,43 @@ function Landing() {
                         <h2 className="mb-5">Portfolio</h2>
                         <p className="lead mb-5">Below are some small pet project that I've created in order to satisfy my thirst of knowledge about a certain technology. Please note that not all developers work on open source software, thus, work-related code cannot be presented due to legal constraints. Most of the projects below are made after office hours. </p>
                         <div className="subheading mb-3">.NET</div>
-                            <ul className="fa-ul mb-0">
-                                <li> Maintained existing code, prototyped new features for a .NET Revit Addin, as part of my job at Autodesk. </li>
-                                <li> Lead innovation project where I had major contribution developing another Revit Addin and a cross platform Xamarin app that communicated with it. </li>
-                                <li> As part of my Software Engineer in Test experience, I’ve made API tests for Advance Steel, including CRUD in a test LocalDB database. </li>
-                                <li>
-                                    <a href="https://github.com/stancu-mihai/serverless-dotnet-api">https://github.com/stancu-mihai/serverless-dotnet-api</a>
-                                    <ul>
-                                        <li>Check it out <a href ="/home">here</a> (served on AWS Lambda)</li> 
-                                        <li>.NET REST API</li> 
-                                        <li>Uses DynamoDB and The serverless framework</li> 
-                                        <li>Generates Swagger documentation automatically</li> 
-                                        <li>Contains unit tests (xUnit) that can also run offline (db is mocked)</li> 
-                                        <li>Implements JWT authentification, contains user roles</li> 
-                                        <li>Measures test coverage</li> 
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="https://github.com/stancu-mihai/RDCproject">https://github.com/stancu-mihai/RDCproject</a>
-                                    <ul>
-                                        <li>Chat application consisting of a server accepting connections from multiple clients</li>
-                                        <li>Client-server communication using sockets and mutual exclusion on common resources</li>
-                                        <li>WPF GUI</li>
-                                        <li>Broadcasted messages enter a queue, used for logging (logger in different thread)</li>
-                                    </ul>
-                                </li>
-                            </ul>
+                        <ul className="fa-ul mb-0">
+                            <li> Maintained existing code, prototyped new features for a .NET Revit Addin, as part of my job at Autodesk. </li>
+                            <li> Lead innovation project where I had major contribution developing another Revit Addin and a cross platform Xamarin app that communicated with it. </li>
+                            <li> As part of my Software Engineer in Test experience, I’ve made API tests for Advance Steel, including CRUD in a test LocalDB database. </li>
+                            <li>
+                                <a href="https://github.com/stancu-mihai/serverless-dotnet-api">https://github.com/stancu-mihai/serverless-dotnet-api</a>
+                                <ul>
+                                    <li>Check it out <a href ="/home">here</a> (served on AWS Lambda)</li> 
+                                    <li>.NET REST API</li> 
+                                    <li>Uses DynamoDB and The serverless framework</li> 
+                                    <li>Generates Swagger documentation automatically</li> 
+                                    <li>Contains unit tests (xUnit) that can also run offline (db is mocked)</li> 
+                                    <li>Implements JWT authentification, contains user roles</li> 
+                                    <li>Measures test coverage</li> 
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="https://github.com/stancu-mihai/RDCproject">https://github.com/stancu-mihai/RDCproject</a>
+                                <ul>
+                                    <li>Chat application consisting of a server accepting connections from multiple clients</li>
+                                    <li>Client-server communication using sockets and mutual exclusion on common resources</li>
+                                    <li>WPF GUI</li>
+                                    <li>Broadcasted messages enter a queue, used for logging (logger in different thread)</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div className="subheading mb-3">React</div>
+                        <ul className="fa-ul mb-0">
+                            <li> Pet project, not work related. </li>
+                            <li>
+                                <a href="https://github.com/stancu-mihai/react-client-typescript ">https://github.com/stancu-mihai/react-client-typescript </a>
+                                <ul>
+                                    <li>This (current website) is the project above, served through GitHub Pages.</li> 
+                                    <li>React + React Router DOM + Typescript</li> 
+                                </ul>
+                            </li>
+                        </ul>
                     </div>
                 </section>
                 <hr className="m-0" />
