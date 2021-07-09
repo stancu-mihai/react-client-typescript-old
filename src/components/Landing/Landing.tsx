@@ -86,7 +86,7 @@ function Landing() {
                                 <h3 className="mb-0"><a href = "https://unibuc.ro/?lang=en">University of Bucharest</a></h3>
                                 <div className="subheading mb-3">Bachelor's degree</div>
                                 <div>Computer Science</div>
-                                <p>Score: 8.99</p>
+                                <p>Score: 9.33</p>
                             </div>
                             <div className="flex-shrink-0"><span className="text-primary">October 2017 - June 2020</span></div>
                         </div>
@@ -140,7 +140,7 @@ function Landing() {
                     <div className="resume-section-content">
                         <h2 className="mb-5">Interests</h2>
                         <p>Apart from being a software engineer, I enjoy spending precious time with my family, escaping as far away from home as possible and immersing ourselves in other cultures around the world. </p>
-                        <p className="mb-0">When forced indoors, I follow a number of sci-fi movies and television shows, I am a cryptocurrency investor, freelancing bounty hunter and I spend a large amount of my free time exploring the latest technology advancements in the web development world.</p>
+                        <p className="mb-0">When forced indoors, I follow a number of sci-fi movies and television shows, learn about cryptocurrency and spend a large amount of my free time exploring the latest technology advancements in the web development world.</p>
                     </div>
                 </section>
                 <nav className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
