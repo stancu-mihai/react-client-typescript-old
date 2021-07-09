@@ -6,7 +6,7 @@ import * as Yup from 'yup';
 type RegisterCredentials = {
     firstName: string,
     lastName: string,
-    username: string,
+    email: string,
     password: string
 }
 
@@ -37,7 +37,8 @@ const RegisterSchema = Yup.object().shape({ // form validation
     .min(2, 'Too Short!')
     .max(50, 'Too Long!')
     .required('Required'),
-    username: Yup.string()
+    email: Yup.string()
+      .email('Must be valid email')
       .min(2, 'Too Short!')
       .max(50, 'Too Long!')
       .required('Required'),
@@ -48,12 +49,12 @@ const RegisterSchema = Yup.object().shape({ // form validation
   });
 
 const Register = ({ setUser }: RegisterTypes) => {
-    const [username, setUserName] = React.useState<string>();
+    const [email, setEmail] = React.useState<string>();
     const [password, setPassword] = React.useState<string>();
     const [firstName, setFirstName] = React.useState<string>();
     const [lastName, setLastName] = React.useState<string>();
 
-    const initialValues: RegisterCredentials = { firstName: '', lastName: '', username: '', password: ''};
+    const initialValues: RegisterCredentials = { firstName: '', lastName: '', email: '', password: ''};
 
     return(
         <div className="login-wrapper">
@@ -65,7 +66,7 @@ const Register = ({ setUser }: RegisterTypes) => {
                         const user = await registerUser({
                             firstName: firstName? firstName : '',
                             lastName: lastName? lastName : '',
-                            username: username? username : '',
+                            email: email? email : '',
                             password: password? password : ''
                         });
                         setUser(user);
@@ -73,7 +74,7 @@ const Register = ({ setUser }: RegisterTypes) => {
                 >
                     {({ errors, touched }) => (
                         <Form>
-                            <h1>Please Sign Up</h1>
+                            <div className="subheading mb-3">Please Sign Up</div>
                             <div className="form-outline mb-4">
                                 <label className="form-label" htmlFor="firstName">First name</label>
                                 <Field 
@@ -97,15 +98,15 @@ const Register = ({ setUser }: RegisterTypes) => {
                                 {errors.lastName && touched.lastName ? (<div className="invalid-feedback d-block">{errors.lastName}</div>) : null}
                             </div>
                             <div className="form-outline mb-4">
-                                <label className="form-label" htmlFor="username">Username</label>
+                                <label className="form-label" htmlFor="email">Email</label>
                                 <Field 
-                                    name="username" 
+                                    name="email" 
                                     className="form-control form-control-lg" 
                                     type="text" 
-                                    placeholder="Enter username"  
-                                    onKeyUp={(e: React.ChangeEvent<HTMLInputElement>) => setUserName(e.target.value)}
+                                    placeholder="Enter email"  
+                                    onKeyUp={(e: React.ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)}
                                 />
-                                {errors.username && touched.username ? (<div className="invalid-feedback d-block">{errors.username}</div>) : null}
+                                {errors.email && touched.email ? (<div className="invalid-feedback d-block">{errors.email}</div>) : null}
                             </div>
                             <div className="form-outline mb-3">
                                 <label className="form-label" htmlFor="password">Password</label>

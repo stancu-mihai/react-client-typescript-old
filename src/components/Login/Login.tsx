@@ -4,7 +4,7 @@ import { Formik, Form, Field  } from 'formik';
 import * as Yup from 'yup';
 
 type LoginCredentials = {
-    username: string,
+    email: string,
     password: string
 }
 
@@ -27,7 +27,8 @@ const LoginPropTypes = {
 type LoginTypes = InferProps<typeof LoginPropTypes>; // compile time prop type-checking
 
 const LoginSchema = Yup.object().shape({ // form validation
-    username: Yup.string()
+    email: Yup.string()
+      .email('Must be valid email')
       .min(2, 'Too Short!')
       .max(50, 'Too Long!')
       .required('Required'),
@@ -38,10 +39,10 @@ const LoginSchema = Yup.object().shape({ // form validation
   });
 
 const Login = ({ setUser }: LoginTypes) => {
-    const [username, setUserName] = React.useState<string>();
+    const [email, setEmail] = React.useState<string>();
     const [password, setPassword] = React.useState<string>();
 
-    const initialValues: LoginCredentials = { username: '', password:'' };
+    const initialValues: LoginCredentials = { email: '', password:'' };
 
     return(
         <div className="login-wrapper">
@@ -51,7 +52,7 @@ const Login = ({ setUser }: LoginTypes) => {
                     validationSchema = { LoginSchema }
                     onSubmit={async (values, actions) => {
                         const user = await loginUser({
-                          username: username? username : '',
+                          email: email? email : '',
                           password: password? password : ''
                         });
                         setUser(user);
@@ -59,17 +60,17 @@ const Login = ({ setUser }: LoginTypes) => {
                 >
                     {({ errors, touched }) => (
                     <Form >
-                        <h1>Please Log In</h1>
+                        <div className="subheading mb-3">Please Log In</div>
                         <div className="form-outline mb-4">
-                            <label className="form-label" htmlFor="username">Username</label>
+                            <label className="form-label" htmlFor="email">Email</label>
                             <Field 
-                                name="username" 
+                                name="email" 
                                 className="form-control form-control-lg" 
                                 type="text" 
-                                placeholder="Enter username"  
-                                onKeyUp={(e: React.ChangeEvent<HTMLInputElement>) => setUserName(e.target.value)}
+                                placeholder="Enter email"  
+                                onKeyUp={(e: React.ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)}
                             />
-                            {errors.username && touched.username ? (<div className="invalid-feedback d-block">{errors.username}</div>) : null}
+                            {errors.email && touched.email ? (<div className="invalid-feedback d-block">{errors.email}</div>) : null}
                         </div>
                         <div className="form-outline mb-3">
                             <label className="form-label" htmlFor="password">Password</label>
