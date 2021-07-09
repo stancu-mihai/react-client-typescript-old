@@ -12,9 +12,12 @@ const Profile = () => {
     <div className="container">
       <header className="jumbotron">
         <h3>
-          <strong>{user.username}</strong> Profile
+          Profile
         </h3>
       </header>
+      <p>
+        <strong>Email:</strong> {user.email}
+      </p>
       <p>
         <strong>First name:</strong> {user.firstName}
       </p>
@@ -25,7 +28,7 @@ const Profile = () => {
         <strong>Token:</strong> {user.token}
       </p>
       <p>
-        <strong>Role:</strong> {user.role}
+        <strong>Role:</strong> {user.role === 1? "Admin" : "User"}
       </p>
     </div>
   );
