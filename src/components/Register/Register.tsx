@@ -11,7 +11,7 @@ type RegisterCredentials = {
 }
 
 async function registerUser(credentials: RegisterCredentials) {
-    let response = await fetch('https://localhost:6001/users/auth/register', {
+    let response = await fetch('https://shrc2yfsge.execute-api.us-east-1.amazonaws.com/dev/users/auth/register', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -128,6 +128,10 @@ const Register = ({ setUser }: RegisterTypes) => {
                                 <p className="small fw-bold mt-2 pt-1 mb-0">
                                     Already have an account? 
                                     <a href="/login" className="link-danger">Login</a>
+                                    <p>...or use existing credentials</p>
+                                    <p> admin@here.com / pass</p>
+                                    <p> user@here.com / pass</p>
+                                    <p> IMPORTANT NOTE: Due to a yet unsolved bug, you have to refresh after submitting!</p>
                                 </p>
                             </div>
                         </Form>

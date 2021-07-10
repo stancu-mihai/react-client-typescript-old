@@ -13,9 +13,9 @@ function Landing() {
                         </h1>
                         <div className="subheading mb-5">
                             Drumul Valea Doftanei 47-51, bl.T3, sc.3, et.2, ap.86 · Bucharest, 061981 · +40 765 278 017 ·
-                            <a href="mailto:mihaistancu5683@yahoo.com">mihaistancu5683@yahoo.com</a>
+                            <a href="mailto:mihai.stancu@autodesk.com">mihai.stancu@autodesk.com</a>
                         </div>
-                        <p className="lead mb-5">Currently working as Software Engineer on Revit (which is a architecture, engineering and construction modeling software). Passionate about web development (front end, back end, Docker, serverless and security). Tech enthusiast, always looking for opportunities to learn new things.</p>
+                        <p className="lead mb-5">Currently working as Software Engineer on Revit. Passionate about web development (front end, back end, Docker, serverless and security). Tech enthusiast, always looking for opportunities to learn new things.</p>
                         <div className="social-icons">
                             <a className="social-icon" href="https://www.linkedin.com/in/mihai-stancu-02729347"><i className="fab fa-linkedin-in"></i></a>
                             <a className="social-icon" href="https://github.com/stancu-mihai"><i className="fab fa-github"></i></a>
@@ -105,7 +105,7 @@ function Landing() {
                 <section className="resume-section" id="portfolio">
                     <div className="resume-section-content">
                         <h2 className="mb-5">Portfolio</h2>
-                        <p className="lead mb-5">Below are some small pet project that I've created in order to satisfy my thirst of knowledge about a certain technology. Please note that not all developers work on open source software, thus, work-related code cannot be presented due to legal constraints. Most of the projects below are made after office hours. </p>
+                        <p className="lead mb-5">Below are some late night small pet project that I've created in order to satisfy my thirst of knowledge about certain technologies or web concepts that I felt unfamiliar with.  </p>
                         <div className="subheading mb-3">.NET</div>
                         <ul className="fa-ul mb-0">
                             <li> Maintained existing code, prototyped new features for a .NET Revit Addin, as part of my job at Autodesk. </li>
@@ -116,11 +116,10 @@ function Landing() {
                                 <ul>
                                     <li>Check it out <a href ="/home">here</a> (served on AWS Lambda)</li> 
                                     <li>.NET REST API</li> 
-                                    <li>Uses DynamoDB and The serverless framework</li> 
+                                    <li>Uses DynamoDB (locally via Docker container) and The serverless framework</li> 
                                     <li>Generates Swagger documentation automatically</li> 
-                                    <li>Contains unit tests (xUnit) that can also run offline (db is mocked)</li> 
+                                    <li>Contains unit tests (xUnit) that mock the db using Moq. Measures test coverage.</li> 
                                     <li>Implements JWT authentification, contains user roles</li> 
-                                    <li>Measures test coverage</li> 
                                 </ul>
                             </li>
                             <li>
@@ -133,6 +132,17 @@ function Landing() {
                                 </ul>
                             </li>
                         </ul>
+                        <div className="subheading mb-3">Python</div>
+                        <ul className="fa-ul mb-0">
+                            <li> As part of my Software Engineer in Test experience, I’ve created some <a href="https://dynamobim.org">Dynamo</a> custom nodes using Python. </li>
+                            <li>
+                                <a href="https://github.com/stancu-mihai/PythonAutomation">https://github.com/stancu-mihai/PythonAutomation</a>
+                                <ul>
+                                    <li>This is probably the least developed repository I have.</li> 
+                                    <li>It contains some simple functions like OS operations (folder creation, deleetion, copying, unzipping, etc) used in daily task automation.</li> 
+                                </ul>
+                            </li>
+                        </ul>
                         <div className="subheading mb-3">React</div>
                         <ul className="fa-ul mb-0">
                             <li> Pet project, not work related. </li>
@@ -140,7 +150,7 @@ function Landing() {
                                 <a href="https://github.com/stancu-mihai/react-client-typescript ">https://github.com/stancu-mihai/react-client-typescript </a>
                                 <ul>
                                     <li>This (current website) is the project above, served through GitHub Pages.</li> 
-                                    <li>React + React Router DOM + Typescript</li> 
+                                    <li>React + React Router DOM + Typescript + Bootstrap + form validation</li> 
                                 </ul>
                             </li>
                         </ul>

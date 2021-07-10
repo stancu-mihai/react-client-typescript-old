@@ -9,7 +9,7 @@ type LoginCredentials = {
 }
 
 async function loginUser(credentials: LoginCredentials) {
-    let response = await fetch('https://localhost:6001/users/auth/authenticate', {
+    let response = await fetch('https://shrc2yfsge.execute-api.us-east-1.amazonaws.com/dev/users/auth/authenticate', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -92,6 +92,10 @@ const Login = ({ setUser }: LoginTypes) => {
                             <p className="small fw-bold mt-2 pt-1 mb-0">
                                 Don't have an account?
                             <a href="/register" className="link-danger">Sign up</a></p>
+                            <p>...or use existing credentials</p>
+                            <p> admin@here.com / pass</p>
+                            <p> user@here.com / pass</p>
+                            <p> IMPORTANT NOTE: Due to a yet unsolved bug, you have to refresh after submitting!</p>
                         </div>
                     </Form>
                     )}
