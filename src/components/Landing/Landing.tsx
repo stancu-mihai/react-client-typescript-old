@@ -114,21 +114,37 @@ function Landing() {
                             <li>
                                 <a href="https://github.com/stancu-mihai/serverless-dotnet-api">https://github.com/stancu-mihai/serverless-dotnet-api</a>
                                 <ul>
-                                    <li>Check it out <a href ="/home">here</a> (served on AWS Lambda)</li> 
-                                    <li>.NET REST API</li> 
-                                    <li>Uses DynamoDB (locally via Docker container) and The serverless framework</li> 
-                                    <li>Generates Swagger documentation automatically</li> 
+                                    <li>Check it out <a href ="/home">here</a> (served on AWS Lambda).</li> 
+                                    <li>.NET REST API.</li> 
+                                    <li>Uses DynamoDB (locally via Docker container) and The serverless framework.</li> 
+                                    <li>Generates Swagger documentation automatically.</li> 
                                     <li>Contains unit tests (xUnit) that mock the db using Moq. Measures test coverage.</li> 
-                                    <li>Implements JWT authentification, contains user roles</li> 
+                                    <li>Implements JWT authentification, contains user roles.</li> 
                                 </ul>
                             </li>
                             <li>
                                 <a href="https://github.com/stancu-mihai/RDCproject">https://github.com/stancu-mihai/RDCproject</a>
                                 <ul>
                                     <li>Chat application consisting of a server accepting connections from multiple clients</li>
-                                    <li>Client-server communication using sockets and mutual exclusion on common resources</li>
-                                    <li>WPF GUI</li>
-                                    <li>Broadcasted messages enter a queue, used for logging (logger in different thread)</li>
+                                    <li>Client-server communication using sockets and mutual exclusion on common resources.</li>
+                                    <li>WPF GUI.</li>
+                                    <li>Broadcasted messages enter a queue, used for logging (logger in different thread).</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div className="subheading mb-3">Node.js</div>
+                        <ul className="fa-ul mb-0">
+                            <li> Diploma project for university. </li>
+                            <li>
+                                <a href="https://github.com/stancu-mihai/FMI-DiplomaProject">https://github.com/stancu-mihai/FMI-DiplomaProject</a>
+                                <ul>
+                                    <li>Check it out <a href ="https://stancu-mihai.herokuapp.com">here</a> (served on Docker container hosted by Heroku free dyno).</li> 
+                                    <li>Timetable generation for university, based on inputs: Rooms (+features), Groups, Professors, Courses, etc.</li> 
+                                    <li>Uses Node.js + Typescript + MongoDB for REST services on backend, Bootstrap + Pug / Jade on the frontend, Travis CI for pipeline.</li> 
+                                    <li>Contains user roles. </li> 
+                                    <li>Uses backtracking algorithm for generation. </li> 
+                                    <li>Uses Jest for testing. </li> 
+                                    <li>Patterns: MVC, Repository, Factory, DI.</li> 
                                 </ul>
                             </li>
                         </ul>
@@ -150,7 +166,7 @@ function Landing() {
                                 <a href="https://github.com/stancu-mihai/react-client-typescript ">https://github.com/stancu-mihai/react-client-typescript </a>
                                 <ul>
                                     <li>This (current website) is the project above, served through GitHub Pages.</li> 
-                                    <li>React + React Router DOM + Typescript + Bootstrap + form validation</li> 
+                                    <li>React + React Router DOM + Typescript + Bootstrap + form validation.</li> 
                                 </ul>
                             </li>
                         </ul>
