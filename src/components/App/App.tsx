@@ -18,19 +18,17 @@ function App() {
   return (
     <Router history={history}>
       <div>
-        <div className="container mt-3">
-          <Switch>
-            <Route exact path={["/", "/landing"]} component={Landing} />{/*Exclude Menu from Landing component*/}
-            <Fragment>
-              <Menu/>
-              <Route exact path="/home" component={Home} />
-              {/*Login and Register components receive callback prop to modify state of its parent (App)*/}
-              <Route exact path="/login" render={(props) => <Login {...props} setUser={setUser}/>} />
-              <Route exact path="/register" render={(props) => <Register {...props} setUser={setUser}/>} />
-              <Route exact path="/profile" component={Profile} />
-            </Fragment>
-          </Switch>
-        </div>
+        <Switch>
+          <Route exact path={["/", "/landing"]} component={Landing} />{/*Exclude Menu from Landing component*/}
+          <Fragment>
+            <Menu/>
+            <Route exact path="/home" component={Home} />
+            {/*Login and Register components receive callback prop to modify state of its parent (App)*/}
+            <Route exact path="/login" render={(props) => <Login {...props} setUser={setUser}/>} />
+            <Route exact path="/register" render={(props) => <Register {...props} setUser={setUser}/>} />
+            <Route exact path="/profile" component={Profile} />
+          </Fragment>
+        </Switch>
       </div>
     </Router>
   );
