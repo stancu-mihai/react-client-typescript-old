@@ -56,7 +56,7 @@ function Landing() {
                                 </div>
                                 <div className="col-lg-6">
                                     <ul>
-                                        <li><i className="bi bi-chevron-right"></i> <strong>Age:</strong> <span>35</span></li>
+                                        <li><i className="bi bi-chevron-right"></i> <strong>Age:</strong> <span>36</span></li>
                                         <li><i className="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bachelor's degree</span></li>
                                         <li><i className="bi bi-chevron-right"></i> <strong>Email:</strong> <span><a href = "mihai.stancu@autodesk.com">mihai.stancu@autodesk.com</a></span></li>
                                     </ul>
